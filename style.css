@@ -1,0 +1,25 @@
+body {
+    background-color: #343A40;
+    color:aliceblue;
+}
+.navbar {
+    background-color: #292d32;
+}
+.nav-link{
+    color: #05f6d5;
+}
+th,td {
+    text-align: center;
+}
+.ss1 {
+    color: #00c20c;
+}
+.ss2 {
+    color: #e2e244;
+}
+.ss3 {
+    color: #e88022;
+}
+.ss4 {
+    color: #7c9ff7;
+}
