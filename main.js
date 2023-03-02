@@ -16,7 +16,7 @@ function getCurrent(){
 }
 
 function setMatrix(dayelement){
-    if(dayelement == 0 ){dayelement=1}
+    // if(dayelement == 0 ){dayelement=1}
     var montharr = setdays(monthCell,monthelement.selectedIndex)
     let week = dayelement*7 
     let j = multiplier * 12
@@ -43,10 +43,22 @@ btn.addEventListener('click', function(){
 })
 
 monthelement.addEventListener("change", function(){
+    
+    if(dayelement.selectedIndex == '0')
+    {dayelement.value='1'}
+    
     setMatrix(dayelement.selectedIndex);
+    // var selIndex = dayelement.selectedIndex
+    // var selectedOption = dayelement.options[1]
+    // selectedOption.textContent="Asas"
+    
+    
 });
 
 dayelement.addEventListener('change', function(){
+    
+    if(monthelement.selectedIndex == '0')
+    {monthelement.value='6'}
     setMatrix(dayelement.selectedIndex)
 })
 
